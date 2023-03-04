@@ -1,0 +1,26 @@
+//template vanila
+
+// 1.create project:
+// with npm: npm create vite name-project --template vanilla
+// With yarn: yarn create vite name-project --template vanilla
+
+// 2. set multi-page
+// a. create file: vite.config.js
+// and copy block code past to file vite.config.js
+// ==================Code==============
+// vite.config.js
+// import { resolve } from 'path'
+// import { defineConfig } from 'vite'
+
+// export default defineConfig({
+// build: {
+// rollupOptions: {
+// input: {
+// main: resolve(**dirname, 'index.html'),
+// postDetail: resolve(**dirname, 'post-detail.html'),
+// addEditPost: resolve(\_\_dirname, 'add-edit-post.html'),
+// },
+// },
+// },
+// })
+// =======End code ================
